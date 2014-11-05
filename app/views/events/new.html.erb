@@ -1,0 +1,29 @@
+<h1>Add New Event</h1>
+<%= form_for @event do |e| %>
+	<p>
+	<%= e.label "Date From" %>
+	<%= e.date_field "date_from" %>
+	</p>
+
+	<p>
+	<%= e.label "date To" %>
+	<%= e.date_field "date_from" %>
+	</p>
+
+	<p>
+	<%= e.label "Location" %>
+	<%= e.text_field "location" %>
+	</p>
+
+	<p>
+	<%= e.label "Description" %>
+	<%= e.text_field "description" %>
+	</p>
+
+	<p>
+	<%= e.submit "Save" %>
+	</p>
+
+	<% end %>
+
+<%= link_to "Home", root_path %>
