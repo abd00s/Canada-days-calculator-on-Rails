@@ -1,5 +1,8 @@
 class EventsController < ApplicationController
-	def welcome		
+
+
+	def welcome	
+			
 	end
 
 	def index
@@ -44,8 +47,10 @@ class EventsController < ApplicationController
 		redirect_to events_path
 	end
 
+
 	private
 	def event_params
 		params.require(:event).permit(:date_from, :date_to, :location, :description)
 	end
+
 end
